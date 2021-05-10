@@ -1,0 +1,16 @@
+cabal-version:      2.4
+name:               graph-repl
+version:            0.1.0.0
+synopsis:
+homepage:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Brent Yorgey
+maintainer:         byorgey@gmail.com
+category:           Graphics
+
+executable graphs
+    main-is:          GraphREPL.hs
+    other-modules:    Graphs, Parsing2
+    build-depends:    base ^>=4.14.1.0, colour, parsec, mtl, containers, haskeline, JuicyPixels, Rasterific
+    default-language: Haskell2010

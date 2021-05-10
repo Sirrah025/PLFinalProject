@@ -1,0 +1,6 @@
+Hello. This is a final project by Will Harris for the CSCI 360 Programming Languages cource taught by Professor Yorgey.
+The idea for the project was to create a graphing calculator, allowing the user to input an arithematic expression and make a graph based off of what expression they typed in.
+Having the program draw something proved to be a challenge. To summarize what it needed to do, it needed to generate a list of points using the bounds given and the function. From there, they input the x-coordinates and return y-coordiantes into a point. From there, those points are fed into polyline.
+Another challenge was having the user defined bounds in the expression, which proved difficult in facilitating the syntax moreso than actually using those bounds. It took a while, and some time learning about parsing in Haskell, before I was able to get this syntax to work: [0,10]:x+1. Inputtting that should give a valid drawing the program will draw on graph.png.
+The main file in charge of the drawing and calculating is located in Graphs.hs.
+In order to use this calculator or build upon it, you will need to install Rasterific. http://hackage.haskell.org/package/Rasterific-0.7.5.3/docs/Graphics-Rasterific.html The file uses this module to draw the graphs using the polyline function and Point data constructor.
